@@ -1,0 +1,11 @@
+name: Webhook E2E
+on:
+  pull_request:
+    branches: [ main ]
+permissions: {}
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: noop
+        run: echo "superagent webhook e2e noop"
